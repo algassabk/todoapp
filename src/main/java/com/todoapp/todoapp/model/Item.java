@@ -1,16 +1,11 @@
 package com.todoapp.todoapp.model;
 
 import jakarta.persistence.*;
-import java.util.List;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.CascadeType;
-
+import java.time.LocalDate;
 
 @Entity
-@Table(name = "categories")
-public class Category {
-    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
-    private List<Item> items;
+@Table(name = "items")
+public class Item {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,8 +13,13 @@ public class Category {
 
     private String name;
     private String description;
+    private LocalDate dueDate;
 
-    public Category() {}
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
+
+    public Item() {}
 
     public Long getId() {
         return id;
@@ -39,5 +39,21 @@ public class Category {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public LocalDate getDueDate() {
+        return dueDate;
+    }
+
+    public void setDueDate(LocalDate dueDate) {
+        this.dueDate = dueDate;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }
