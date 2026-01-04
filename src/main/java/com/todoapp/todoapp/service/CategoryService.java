@@ -1,5 +1,5 @@
-package com.todoapp.todoapp.Service;
-import com.todoapp.todoapp.Repository.CategoryRepository;
+package com.todoapp.todoapp.service;
+import com.todoapp.todoapp.repository.CategoryRepository;
 import com.todoapp.todoapp.model.Category;
 import org.springframework.stereotype.Service;
 

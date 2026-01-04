@@ -1,7 +1,7 @@
-package com.todoapp.todoapp.Controller;
+package com.todoapp.todoapp.controller;
 
 import com.todoapp.todoapp.model.Category;
-import com.todoapp.todoapp.Service.CategoryService;
+import com.todoapp.todoapp.service.CategoryService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

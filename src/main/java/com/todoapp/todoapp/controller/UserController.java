@@ -1,6 +1,6 @@
-package com.todoapp.todoapp.Controller;
+package com.todoapp.todoapp.controller;
 import com.todoapp.todoapp.model.User;
-import com.todoapp.todoapp.Service.UserService;
+import com.todoapp.todoapp.service.UserService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

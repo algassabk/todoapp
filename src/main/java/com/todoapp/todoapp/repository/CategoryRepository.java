@@ -1,4 +1,4 @@
-package com.todoapp.todoapp.Repository;
+package com.todoapp.todoapp.repository;
 
 
 import com.todoapp.todoapp.model.Category;

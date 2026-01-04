@@ -1,7 +1,7 @@
-package com.todoapp.todoapp.Controller;
+package com.todoapp.todoapp.controller;
 
 import com.todoapp.todoapp.model.Item;
-import com.todoapp.todoapp.Service.ItemService;
+import com.todoapp.todoapp.service.ItemService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
